@@ -1,0 +1,298 @@
+﻿*{
+margin:0;
+padding:0;
+list-style:none
+}
+h1{
+font-weight:bold;
+font-size:30px;
+background:linear-gradient(blue,white);
+border-radius:10px;
+text-align:center;
+width:50%;
+margin-left:400px;
+padding:10px 0;
+color:#fff;
+}
+.nav-main{
+display:inline-block;
+margin: 0;
+padding: 0;
+background-color:khaki;
+list-style:none;
+width:100%;
+margin-top:50px;	
+}
+.nav-main li{
+float: left;
+margin-left:150px;
+}
+.nav-main li a{
+display: inline-block;
+padding: 15px 20px;
+text-decoration: none;
+background-color: #008b8b;
+color: black;
+font-weight:bold;
+font-family:'Abril Fatface', cursive;
+
+}
+
+.nav-main li a:hover:not(.active){
+background-color: #f00;
+color: #fff;
+}
+
+.paragraph{
+font-weight:bold;
+font-size:30px;
+background:linear-gradient(45deg,red,white);
+border-radius:10px;
+padding:10px 10px;
+color:#000;
+width:100%;
+margin-top:50px;
+}
+.paragraph1{
+font-weight:bold;
+font-size:30px;
+background:linear-gradient(45deg,red,white);
+border-radius:10px;
+padding:10px 10px;
+color:#000;
+width:100%;
+
+}
+main{
+margin-left:75px;
+margin-top:50px;
+}
+
+.div2{
+margin-top:500px;
+}
+.box{
+background-color:pink;
+display:block;
+float:left;
+padding:10px;
+}
+.images{
+width:180px;
+height:150px;
+border-radius:10px;
+}
+.images:hover{
+transform:scale(2,2);
+transition:2s transform;
+}
+
+.icon ul li{
+position:relative;
+left:50%;
+width:40px;
+height:40px;
+line-height:40px;
+margin:15px 15px;
+text-align:center;
+border-radius:50%;
+float:left;
+font-size:20px;
+color:#fff;
+background:#000;
+cursor:pointer;
+transition:0.7s;
+border: 1px solid #fff;
+}
+.icon ul li:before{
+position:absolute;
+content:'';
+left:0;
+top:0;
+height:100%;
+width:100%;
+border-radius:50%;
+z-index:-1;
+transform:scale(0.9);
+transition:0.7s;
+}
+.icon ul li:nth-child(1):before{
+background:#00ffff;
+
+}
+.icon ul li:nth-child(2):before{
+background:#ff0099;
+}
+.icon ul li:nth-child(3):before{
+background:#33ff00;
+}
+.icon ul li:nth-child(4):before{
+background:#ff0000;
+}
+.icon ul li:nth-child(5):before{
+background:#ff0099;
+}
+
+.icon ul li:hover:before{
+transform:scale(1.2);
+filter:blur:20px;
+}
+.icon ul li:nth-child(1):before{
+box-shadow:0 0 20px #00ffff;
+}
+.icon ul li:nth-child(2):before{
+box-shadow:0 0 20px #ff0099;
+}
+.icon ul li:nth-child(3):before{
+box-shadow:0 0 20px #33ff00;
+}
+.icon ul li:nth-child(4):before{
+box-shadow:0 0 20px #ff0000;
+}
+.icon ul li:nth-child(5):before{
+box-shadow:0 0 20px #ff0099;
+}
+
+.icon ul li:nth-child(1):hover{
+color:#66ccff;
+box-shadow:0 0 20px #00ffff;
+text-shadow:0 0 20px #00ffff;
+}
+.icon ul li:nth-child(2):hover{
+color:#ff66ff;
+box-shadow:0 0 20px #ff0099;
+text-shadow:0 0 20px #ff0099;
+}
+.icon ul li:nth-child(3):hover{
+color:#33ff66;
+box-shadow:0 0 20px #33ff00;
+text-shadow:0 0 20px #33ff00;
+}
+.icon ul li:nth-child(4):hover{
+color:#ff0033;
+box-shadow:0 0 20px #ff0000;
+text-shadow:0 0 20px #ff0000;
+}
+.icon ul li:nth-child(5):hover{
+color:#ff66ff;
+box-shadow:0 0 20px #ff0099;
+text-shadow:0 0 20px #ff0099;
+}
+.footer{
+background-color:#000;
+margin-top:500px;
+height:100px;
+}
+.container{
+color:#fff;
+text-align:left;
+}
+@media only screen and (max-width:1480px){
+.div2{
+margin-top:600px;
+}
+.footer{
+margin-top:600px;
+}
+.icon ul li{
+left:30%;
+}
+}
+@media only screen and (max-width:1300px){
+h1{
+margin-left:300px;
+}
+}
+@media only screen and (max-width:1080px){
+h1{
+margin-left:250px;
+}
+.div2{
+margin-top:800px;
+}
+.footer{
+margin-top:800px;
+}
+.icon ul li{
+left:20%;
+}
+}
+@media only screen and (max-width:900px){
+h1{
+margin-left:150px;
+font-size:20px;
+}
+.div2{
+margin-top:800px;
+}
+.footer{
+margin-top:800px;
+}
+.icon ul li{
+left:15%;
+width:30px;
+height:30px;
+font-size:10px;
+line-height:30px;
+}
+.paragraph{
+font-size:20px;
+}
+.paragraph1{
+font-size:20px;
+}
+.images{
+width:150px;
+height:130px;
+}
+}
+@media only screen and (max-width:625px){
+h1{
+margin-left:100px;
+font-size:20px;
+}
+.div2{
+margin-top:1000px;
+}
+.footer{
+margin-top:1000px;
+}
+.icon ul li{
+left:0;
+width:20px;
+height:20px;
+font-size:10px;
+line-height:20px;
+}
+.container{
+font-size:10px;
+}
+}
+@media only screen and (max-width:625px){
+h1{
+margin-left:140px
+}
+.div2{
+margin-top:1000px;
+}
+.footer{
+margin-top:1000px;
+}
+.images{
+width:120px;
+height:100px;
+}
+}
+
+@media only screen and (max-width:400px){
+.images{
+width:70px;
+height:50px;
+}
+.div2{
+margin-top:700px;
+}
+.footer{
+margin-top:700px;
+}
+}

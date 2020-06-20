@@ -1,0 +1,218 @@
+﻿
+*{
+margin:0;
+padding:0;
+list-style:none;
+}
+video{
+position:fixed;
+z-index:-1;
+right:0;
+bottom:0;
+width:100%;
+filter:blur(5px);
+height:100vh;
+}
+.nav-main{
+display:inline-block;
+margin: 0;
+padding: 0;
+background:transparent;
+list-style:none;
+width:100%;	
+}
+.nav-main li{
+float: left;
+margin-left:150px;
+}
+.nav-main li a{
+display: inline-block;
+padding: 15px 20px;
+text-decoration: none;
+background:transparent;
+color:#fff;
+font-weight:bold;
+font-family:'Abril Fatface', cursive;
+
+}
+
+.nav-main li a:hover:not(.active){
+background-color: #f00;
+color: #fff;
+}
+
+.main-box{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+margin-top:100px;
+}
+.login-form{
+width:500px;
+height:600px;
+display:flex;
+flex-direction:column;
+align-items:center;
+border-radius:20px;
+background:rgba(255,0,0,0.1);
+box-shadow: 0 0 15px #0f0;
+color:#fff;
+padding:80px;
+}
+.login h2{
+margin-bottom:30px;
+}
+.div1{
+margin-top:20px;
+font-size:20px;
+color:#000;
+text-shadow: 0 0 5px yellow;
+}
+
+.div2{
+margin-top:20px;
+font-size:20px;
+color:#000;
+text-shadow: 0 0 5px yellow;
+}
+
+
+input{
+width:300px;
+margin-top:10px;
+margin-bottom:5px;
+padding:5px;
+outline:none;
+background:transparent;
+border:2px solid #f00;
+border-radius:40px;
+transition:0.8s;
+font-size:20px;
+}
+input[placeholder]:focus{
+color:#fff;
+}
+
+.botton{
+padding: 5px 20px;
+margin-top:50px;
+cursor:pointer;
+background:transparent;
+border:2px solid #f00;
+border-radius:40px;
+}
+.botton:hover{
+box-shadow:0 0 20px #fff;
+background:#000;
+}
+.userimg{
+width:70px;
+border-radius:50%;
+margin-top:-120px;
+}
+
+.icon ul li{
+position:relative;
+left:50%;
+width:40px;
+height:40px;
+line-height:40px;
+margin:15px 15px;
+text-align:center;
+border-radius:50%;
+float:left;
+font-size:20px;
+color:#fff;
+background:#000;
+cursor:pointer;
+transition:0.7s;
+border: 1px solid #fff;
+}
+.icon ul li:before{
+position:absolute;
+content:'';
+left:0;
+top:0;
+height:100%;
+width:100%;
+border-radius:50%;
+z-index:-1;
+transform:scale(0.9);
+transition:0.7s;
+}
+.icon ul li:nth-child(1):before{
+background:#00ffff;
+
+}
+.icon ul li:nth-child(2):before{
+background:#ff0099;
+}
+.icon ul li:nth-child(3):before{
+background:#33ff00;
+}
+.icon ul li:nth-child(4):before{
+background:#ff0000;
+}
+.icon ul li:nth-child(5):before{
+background:#ff0099;
+}
+
+.icon ul li:hover:before{
+transform:scale(1.2);
+filter:blur:20px;
+}
+.icon ul li:nth-child(1):before{
+box-shadow:0 0 20px #00ffff;
+}
+.icon ul li:nth-child(2):before{
+box-shadow:0 0 20px #ff0099;
+}
+.icon ul li:nth-child(3):before{
+box-shadow:0 0 20px #33ff00;
+}
+.icon ul li:nth-child(4):before{
+box-shadow:0 0 20px #ff0000;
+}
+.icon ul li:nth-child(5):before{
+box-shadow:0 0 20px #ff0099;
+}
+
+.icon ul li:nth-child(1):hover{
+color:#66ccff;
+box-shadow:0 0 20px #00ffff;
+text-shadow:0 0 20px #00ffff;
+}
+.icon ul li:nth-child(2):hover{
+color:#ff66ff;
+box-shadow:0 0 20px #ff0099;
+text-shadow:0 0 20px #ff0099;
+}
+.icon ul li:nth-child(3):hover{
+color:#33ff66;
+box-shadow:0 0 20px #33ff00;
+text-shadow:0 0 20px #33ff00;
+}
+.icon ul li:nth-child(4):hover{
+color:#ff0033;
+box-shadow:0 0 20px #ff0000;
+text-shadow:0 0 20px #ff0000;
+}
+.icon ul li:nth-child(5):hover{
+color:#ff66ff;
+box-shadow:0 0 20px #ff0099;
+text-shadow:0 0 20px #ff0099;
+}
+.footer{
+background-color:#000;
+margin-top:1000px;
+height:100px;
+}
+.container{
+color:#fff;
+text-align:left;
+}
+@media only screen and (max-width:100px){
+
+}
+}
